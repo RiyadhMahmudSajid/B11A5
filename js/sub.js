@@ -170,10 +170,7 @@ const year = updater.getFullYear()
 document.getElementById("bar").innerText = `${day} ${","}`
 document.getElementById("DMY").innerText = `${month} ${date} ${year}`
 
-document.getElementById("div-btn").addEventListener('click',function(event){
-   window.location.href = "../main.html"
 
-})
 
 
 
