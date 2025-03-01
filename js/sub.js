@@ -32,6 +32,10 @@ for(let i = 0; i<commonBtnn.length ; i++){
 
    
 }
+// const rtr = document.querySelectorAll('.text-t')
+// for(let i = 0; i< rtr.length;i++){
+//     console.log(rtr[i])
+// }
 
 
 
@@ -92,9 +96,51 @@ function myfun2(){
     // contain.appendChild(p)
 }
 function myfun3(){
+    const currentDate = new Date();
+    let hour = currentDate.getHours();
+    let minutes = currentDate.getMinutes();
+    let seconds = currentDate.getSeconds();
+    let prepand = (hour >= 12) ? "PM" : "AM"
+    hour = hour % 12 || 12;
+    minutes = minutes.toString().padStart(2,"0")
+    seconds = seconds.toString().padStart(2,"0")
+    let timeri = ` ${hour}:${minutes}:${seconds} ${prepand }`
     const contain = document.getElementById('aside-container')
     const p = document.createElement("p");
-    p.innerText = `${"You have complted the task "}${document.querySelector('.kola').innerText}`
+    p.classList.add("h-16", "p-6", "py-10","bg-[#F4F7FF]","mt-6","rounded-2xl", "flex","items-center")
+    p.innerText = `${"You have complted the task "}${document.querySelector('.kola').innerText}${timeri}`
+    contain.appendChild(p)
+}
+function myfun4(){
+    const currentDate = new Date();
+    let hour = currentDate.getHours();
+    let minutes = currentDate.getMinutes();
+    let seconds = currentDate.getSeconds();
+    let prepand = (hour >= 12) ? "PM" : "AM"
+    hour = hour % 12 || 12;
+    minutes = minutes.toString().padStart(2,"0")
+    seconds = seconds.toString().padStart(2,"0")
+    let timeri = ` ${hour}:${minutes}:${seconds} ${prepand }`
+    const contain = document.getElementById('aside-container')
+    const p = document.createElement("p");
+    p.classList.add("h-16", "p-6", "py-10","bg-[#F4F7FF]","mt-6","rounded-2xl", "flex","items-center")
+    p.innerText = `${"You have complted the task "}${document.querySelector('.four-h2').innerText}${timeri}`
+    contain.appendChild(p)
+}
+function myfun5(){
+    const currentDate = new Date();
+    let hour = currentDate.getHours();
+    let minutes = currentDate.getMinutes();
+    let seconds = currentDate.getSeconds();
+    let prepand = (hour >= 12) ? "PM" : "AM"
+    hour = hour % 12 || 12;
+    minutes = minutes.toString().padStart(2,"0")
+    seconds = seconds.toString().padStart(2,"0")
+    let timeri = ` ${hour}:${minutes}:${seconds} ${prepand }`
+    const contain = document.getElementById('aside-container')
+    const p = document.createElement("p");
+    p.classList.add("h-16", "p-6", "py-10","bg-[#F4F7FF]","mt-6","rounded-2xl", "flex","items-center")
+    p.innerText = `${"You have complted the task "}${document.querySelector('.five-h2').innerText}${timeri}`
     contain.appendChild(p)
 }
 
@@ -128,6 +174,8 @@ document.getElementById("div-btn").addEventListener('click',function(event){
    window.location.href = "../main.html"
 
 })
+
+
 
 
 
