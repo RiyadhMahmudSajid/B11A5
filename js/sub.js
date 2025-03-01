@@ -67,7 +67,7 @@ function myfun1(){
     const contain = document.getElementById('aside-container')
     const p = document.createElement("p");
      p.classList.add("h-16", "p-6","bg-[#F4F7FF]","mt-6","rounded-2xl", "flex","items-center")
-    p.innerText = `${"You have complted the task "}${document.querySelector('.first-h2').innerText}${timeri}`
+    p.innerText = `${"You have complted the task "}${document.querySelector('.text-t ').innerText}${timeri}`
     contain.appendChild(p)
 
 }
