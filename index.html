@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+        .font-fam{
+            font-family:  "Poppins", sans-serif;;
+        }
+        .main-banner{
+            background: linear-gradient(130.70deg, rgb(55, 82, 253) 0.419%,rgb(108, 127, 250) 52.66%,rgb(155, 168, 248) 99.733%);
+        }
+    </style>
+</head>
+<body id="body-id" class="font-fam bg-[#F4F7FF] p-6" >
+   <header class="w-11/12 mx-auto  bg-white rounded-2xl  ">
+        <div class="flex justify-between items-center  h-24">
+            <div class="flex gap-4 pl-6 items-center ">
+               <img src="./assets/logo.png" alt="">
+               <p class="font-fam text-[35px]">Dev<span class="font-bold">Board</span></p>
+            </div>
+            <div class="flex gap-4 pr-6 items-center">
+                <div class="flex items-center w-28 h-16 bg-[#F4F7FF] rounded-3xl  justify-center gap-1"> <img src="./assets/checkbox.png" alt=""><span id="Added" class="text-[32px] font-bold">23</span></div>
+                <div class="w-14 h-14 bg-[#F4F7FF] rounded-full  flex items-center justify-center">
+                    <img id="change-color" class="cursor-pointer" src="./assets/theme-btn.png" alt="">
+                </div>
+            </div>
+        </div>
+   </header>
+   <main class="w-11/12 mx-auto grid grid-cols-4 bg-white mt-6 gap-3 px-3 rounded-2xl pb-5">
+        <section class="col-span-3  ">
+            <div class="flex gap-5  justify-between pt-6">
+                <div class="flex items-center w-64 h-32 bg-[#F4F7FF] rounded-xl   justify-around gap-1">
+                    <div class="  w-16 h-16 bg-white rounded-full flex items-center justify-center "> 
+                        <img src="./assets/checkbox.png" alt="">
+                    </div>
+                    <div class="">
+                        <p class="font-medium">Task Assigned</p>
+                        <p class="font-bold text-2xl" id="sub-balence">6</p>
+                    </div>
+                </div>
+                <div id="div-btn" class="main-banner w-[500px] gap-5 flex items-center justify-around rounded-xl cursor-pointer">
+                    <img class="ml-4"  src="./assets/board.png" alt="">
+                    <p class=" text-white text-[25px] ">Discover Something New Today!</p>
+                </div>
+                <div  class="flex items-center w-64 h-32 bg-[#F4F7FF] rounded-xl  gap-3"> 
+                    <div class="ml-5 w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                        <img src="./assets/calender.png" alt="">
+                    </div>
+                    <div id="update-date">
+                        <p id="bar" class=" text-xl"></p>
+                        <p id="DMY" class="font-semibold text-xl"></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" grid grid-cols-3 gap-8">
+                <div class=" bg-[#F4F7FF] p-6 mt-6 rounded-2xl">
+                    <div class="px-4 py-2 w-28 bg-white rounded-lg">
+                        <p>Shokes</p>
+                    </div>
+                    <h2 class="text-t  my-4 text-2xl font-semibold">Fix Mobile Button Issue</h2>
+                    <div class="p-4 bg-white mb-7 rounded-lg">
+                        <p>Debug using Chrome DevTools, check for overlappin</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm f  text-slate-500">Deadline</p>
+                            <p class="font-medium">21 MArch 2025</p>
+                        </div>
+                        <button onclick="myfun1()"  class="first-h2 bg-[#3752FD] common-btn text-white py-2.5 px-5 rounded-lg" >Completed</button>
+                    </div>
+                </div>
+                <div class=" bg-[#F4F7FF] p-6 mt-6 rounded-2xl">
+                    <div class="px-4 py-2 w-28 bg-white rounded-lg">
+                        <p>CloudSync</p>
+                    </div>
+                    <h2 class="text-t  my-4 text-2xl font-semibold">Add Pay Success Model </h2>
+                    <div class="p-4 bg-white mb-7 rounded-lg">
+                        <p>Store the user's preference in localStorage, update CSS pdate CSS variables </p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm f  text-slate-500">Deadline</p>
+                            <p class="font-medium">21 MArch 2025</p>
+                        </div>
+                        <button onclick="myfun2()" class="sec-h2 bg-[#3752FD] common-btn text-white py-2.5 px-5 rounded-lg" >Completed</button>
+                    </div>
+                </div>
+                <div class=" bg-[#F4F7FF] p-6 mt-6 rounded-2xl">
+                    <div class="px-4 py-2 w-28 bg-white rounded-lg">
+                        <p>SwiftPay</p>
+                    </div>
+                    <h2 class="text-t kola my-4 text-2xl font-semibold">Optimize the Home page</h2>
+                    <div class="p-4 bg-white mb-7 rounded-lg">
+                        <p>Debug using Chrome DevTools, check for overlappin</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm f  text-slate-500">Deadline</p>
+                            <p class="font-medium">21 MArch 2025</p>
+                        </div>
+                        <button onclick="myfun3()" class="bg-[#3752FD] common-btn text-white py-2.5 px-5 rounded-lg" >Completed</button>
+                    </div>
+                </div>
+                <div class=" bg-[#F4F7FF] p-6 mt-6 rounded-2xl">
+                    <div class="px-4 py-2 w-28 bg-white rounded-lg">
+                        <p>Shokes</p>
+                    </div>
+                    <h2 class=" text-t my-4 text-2xl font-semibold">Fix Mobile Button Issue</h2>
+                    <div class="p-4 bg-white mb-7 rounded-lg">
+                        <p>Debug using Chrome DevTools, check for overlappin</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm f  text-slate-500">Deadline</p>
+                            <p class="font-medium">21 MArch 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] common-btn text-white py-2.5 px-5 rounded-lg" >Completed</button>
+                    </div>
+                </div>
+                <div class=" bg-[#F4F7FF] p-6 mt-6 rounded-2xl">
+                    <div class="px-4 py-2 w-28 bg-white rounded-lg">
+                        <p>Shokes</p>
+                    </div>
+                    <h2  class="text-t my-4 text-2xl font-semibold">Fix Mobile Button Issue</h2>
+                    <div class="p-4 bg-white mb-7 rounded-lg">
+                        <p>Debug using Chrome DevTools, check for overlappin</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm f  text-slate-500">Deadline</p>
+                            <p class="font-medium">21 MArch 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] common-btn text-white py-2.5 px-5 rounded-lg" >Completed</button>
+                    </div>
+                </div>
+                <div class=" bg-[#F4F7FF] p-6 mt-6 rounded-2xl">
+                    <div class="px-4 py-2 w-28 bg-white rounded-lg">
+                        <p>Shokes</p>
+                    </div>
+                    <h2 class="text-t sola my-4 text-2xl font-semibold">Improve Job searching</h2>
+                    <div class="p-4 bg-white mb-7 rounded-lg">
+                        <p>Debug using Chrome DevTools, check for overlappin</p>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm f  text-slate-500">Deadline</p>
+                            <p class="font-medium">21 MArch 2025</p>
+                        </div>
+                        <button onclick="myfun()" id="btn" class="bg-[#3752FD] common-btn text-white py-2.5 px-5 rounded-lg" >Completed</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+
+        <!--Aside-->
+        <section id="aside-sec" class="col-span-1 mt-6 pt-6 bg-white rounded-xl">
+            <div class="flex items-center flex-col border-b-2 border-dashed border-black-50 pb-5">
+                <div class="flex gap-2">
+                        <img src="./assets/activity.png" alt="">
+                        <p>Activity Log</p>
+                </div>
+                <button id="clear-btn" class="bg-[#3752FD] text-white py-2.5 px-5 rounded-lg mt-4">Clear History</button>
+                
+            </div>
+            <div id="aside-container">
+
+            </div>
+        </section>
+   </main>
+   <script src="./js/sub.js"></script>
+</body>
+</html>

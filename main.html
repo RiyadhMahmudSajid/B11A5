@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-fam{
+            font-family:  "Poppins", sans-serif;;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body class="font-fam bg-[#F4F7FF] p-6">
+    <header class="w-11/12 mx-auto  bg-white rounded-2xl  ">
+        <div class="flex justify-between items-center  h-24">
+            <div class="flex gap-4 pl-6 items-center ">
+               <img src="./assets/logo.png" alt="">
+               <p class="font-fam text-[35px]">Dev<span class="font-bold">Board</span></p>
+            </div>
+            <div class="flex gap-4 pr-6 items-center">
+                <button id="blog-btn" class="bg-[#3752FD]  text-white py-2.5 px-5 rounded-lg" >Back to Desk</button>
+            </div>
+        </div>
+    </header>
+    <!--blog section-->
+    <section class="w-11/12 mx-auto">
+        <h2 class="text-center font-bold text-3xl mt-3">Blogs</h2>
+        <div>
+            <div class="bg-white my-5 rounded-md ">
+                <h2 class="font-bold text-2xl p-6 border-b-2 border-dashed border-black-50">Question-1: What are the different ways to select an element in the DOM?</h2>
+                <p class=" text-[18px] p-6 text-slate-600">Lot of different we find. For example getElementById, getElementsByClassName,getElementsByTagName,quearyselector,selectorAll, childNodes,parentnode etc</p>
+            </div>
+            <div class="bg-white my-5 rounded-md ">
+                <h2 class="font-bold text-2xl p-6 border-b-2 border-dashed border-black-50">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+                <p class=" text-[18px] p-6 text-slate-600"">innerHtml:HTML Content of the Element innerText:Visible text inside an Element,textContent:Return All text content include hidden elements  </p>
+            </div>
+            <div class="bg-white my-5 rounded-md ">
+                <h2 class="font-bold text-2xl p-6 border-b-2 border-dashed border-black-50">Question-3: What is event delegation in the DOM?</h2>
+                <p class=" text-[18px] p-6 text-slate-600"">It is a pattern to hanndle event easyly.We can add event listener into parent element except every element.We can use event.target to call event</p>
+            </div>
+            <div class="bg-white my-5 rounded-md ">
+                <h2 class="font-bold text-2xl p-6 border-b-2 border-dashed border-black-50">Question-4: What is event bubbling in the DOM?</h2>
+                <p class=" text-[18px] p-6 text-slate-600"">It means it is a process where event is first triggered child element then triggered  parent element then grand parent Element  untill it reach the document</p>
+            </div>
+            <div class="bg-white my-5 rounded-md ">
+                <h2 class="font-bold text-2xl p-6 border-b-2 border-dashed border-black-50">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+                <p class="p-6  text-[18px] text-slate-600">For create an element we use document.document.createElement for add we use appendChild() method,For remove an element we use remove()method</p>
+            </div>
+        </div>
+    </section>
+    <script>
+       document.getElementById("blog-btn").addEventListener('click',function(event){
+       window.location.href = "./index.html"
+     })
+    </script>
+   <script src="./js/sub.js"></script>
+</body>
+</html>
