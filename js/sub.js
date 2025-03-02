@@ -48,7 +48,7 @@ function myfun(){
     const contain = document.getElementById('aside-container')
 
     const p = document.createElement("p");
-    p.classList.add("h-16", "p-6","bg-[#F4F7FF]","mt-6","rounded-2xl", "flex","items-center")
+    p.classList.add("px-4","py-4","bg-[#F4F7FF]","mt-6","rounded-2xl", "flex","items-center")
     p.innerText = `${"You have complted the task "}${document.querySelector('.sola').innerText}${" at"}${timeri}`
     contain.appendChild(p)
 }
@@ -64,7 +64,7 @@ function myfun1(){
     let timeri = ` ${hour}:${minutes}:${seconds} ${prepand }`
     const contain = document.getElementById('aside-container')
     const p = document.createElement("p");
-     p.classList.add("h-16", "p-6","bg-[#F4F7FF]","mt-6","rounded-2xl", "flex","items-center")
+     p.classList.add( "p-4","bg-[#F4F7FF]","mt-6","rounded-2xl", "flex","items-center")
     p.innerText = `${"You have complted the task "}${document.querySelector('.fir-h2  ').innerText}${" at"}${timeri}`
     contain.appendChild(p)
 
@@ -82,7 +82,7 @@ function myfun2(){
     let timeri = ` ${hour}:${minutes}:${seconds} ${prepand }`
     const contain = document.getElementById('aside-container')
     const p = document.createElement("p");
-     p.classList.add("h-16", "p-6","bg-[#F4F7FF]","mt-6","rounded-2xl", "flex","items-center")
+     p.classList.add( "p-4","bg-[#F4F7FF]","mt-6","rounded-2xl", "flex","items-center")
     p.innerText = `${"You have complted the task "}${document.querySelector('.sec-h2 ').innerText}${" at"}${timeri}`
     contain.appendChild(p)
    
@@ -99,7 +99,7 @@ function myfun3(){
     let timeri = ` ${hour}:${minutes}:${seconds} ${prepand }`
     const contain = document.getElementById('aside-container')
     const p = document.createElement("p");
-    p.classList.add("h-16", "p-6", "py-10","bg-[#F4F7FF]","mt-6","rounded-2xl", "flex","items-center")
+    p.classList.add( "p-4","bg-[#F4F7FF]","mt-6","rounded-2xl", "flex","items-center")
     p.innerText = `${"You have complted the task "}${document.querySelector('.kola').innerText}${" at"}${timeri}`
     contain.appendChild(p)
 }
@@ -115,7 +115,7 @@ function myfun4(){
     let timeri = ` ${hour}:${minutes}:${seconds} ${prepand }`
     const contain = document.getElementById('aside-container')
     const p = document.createElement("p");
-    p.classList.add("h-16", "p-6", "py-10","bg-[#F4F7FF]","mt-6","rounded-2xl", "flex","items-center")
+    p.classList.add("p-4","bg-[#F4F7FF]","mt-6","rounded-2xl", "flex","items-center")
     p.innerText = `${"You have complted the task "}${document.querySelector('.four-h2').innerText}${" at"}${timeri}`
     contain.appendChild(p)
 }
@@ -131,7 +131,7 @@ function myfun5(){
     let timeri = ` ${hour}:${minutes}:${seconds} ${prepand }`
     const contain = document.getElementById('aside-container')
     const p = document.createElement("p");
-    p.classList.add("h-16", "p-6", "py-10","bg-[#F4F7FF]","mt-6","rounded-2xl", "flex","items-center")
+    p.classList.add("p-4","bg-[#F4F7FF]","mt-6","rounded-2xl", "flex","items-center")
     p.innerText = `${"You have complted the task "}${document.querySelector('.five-h2').innerText}${" at"}${timeri}`
     contain.appendChild(p)
 }
